@@ -9,6 +9,10 @@ __pycache__/
 # data
 /data
 
+# microsoft trash
+*.docx#
+
+
 # Distribution / packaging
 .Python
 build/
