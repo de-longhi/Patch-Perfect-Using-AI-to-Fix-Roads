@@ -69,6 +69,7 @@ This repository serves as a host for a project between [my friend](https://githu
 This section lists any major frameworks/libraries we used throughout this project.
 
 [![Pytorch][Pytorch]][Pytorch-url]
+
 ...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -90,7 +91,7 @@ This is an example of how to install pytorch, however, we recommend looking <a h
 ### Installation
 
 
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads.git
    ```
@@ -128,8 +129,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- OUR TEAM-->
 ## Our Team
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors"><img src= "https://avatars.githubusercontent.com/u/156434955?v=4" width=75 height=75 style='border-radius: 50%' alt="Johan de Jongh"><img src="https://avatars.githubusercontent.com/u/124169877?v=4 " width=75 height=75 style='border-radius: 50%' alt="Johann Matthee" />
-</a>
+<a href="https://github.com/de-longhi"><img src= "https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/156434955?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width=75 height=75 style='border-radius: 50%' alt="Johan de Jongh"></a><a href="https://github.com/Johann-Matthee"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/124169877?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width=75 height=75 style='border-radius: 50%' alt="Johann Matthee"/></a>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
