@@ -139,7 +139,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,15 +153,7 @@ Johan Matthee - johannmettween@gmail.com
 
 Project Link: https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-...
-
+<p align="right">(<a href="#readme-images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -170,7 +162,7 @@ Project Link: https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads
 [contributors-shield]: https://img.shields.io/badge/Collaborators-2-blue?style=for-the-badge
 [contributors-url]: https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads/blob/master/LICENSE.txt
+[license-url]: https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads/blob/master/LICENSE
 [linkedin-shield-johan]: https://img.shields.io/badge/LinkedIn-Johan-grey?style=for-the-badge
 [linkedin-shield-johann]: https://img.shields.io/badge/LinkedIn-Johann-grey?style=for-the-badge
 [linkedin-url-johan]: https://linkedin.com/in/de-longhi
