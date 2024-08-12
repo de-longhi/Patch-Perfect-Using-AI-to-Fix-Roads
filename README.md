@@ -149,11 +149,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Johan de Jongh - johandejongh665@gmail.com
+
 Johan Matthee - johannmettween@gmail.com
 
 Project Link: https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads
 
-<p align="right">(<a href="#readme-images.weserv.nl/?url=avatars.githubusercontent.com/u/65769327?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
