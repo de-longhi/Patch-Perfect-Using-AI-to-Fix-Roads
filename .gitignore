@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # training checkpoints
-/runs/
+*.yaml
 
 # data
 /data
