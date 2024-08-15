@@ -12,6 +12,8 @@ __pycache__/
 # microsoft trash
 *.docx#
 
+# models
+*.pt
 
 # Distribution / packaging
 .Python
@@ -139,6 +141,12 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# downloaded models
+pretrained_model.pt
+
+# training checkpoints
+/runs/
 
 # Spyder project settings
 .spyderproject
