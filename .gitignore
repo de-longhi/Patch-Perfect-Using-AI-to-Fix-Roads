@@ -149,7 +149,7 @@ venv.bak/
 pretrained_model.pt
 
 # training checkpoints
-/runs/
+#runs/
 
 # Spyder project settings
 .spyderproject
