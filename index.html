@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Patch Perfect: Using AI to fix roads</h1>
+            <p>A Standard Bank Hackathon</p>
+            <img src="assets/images/Data School 2024 Hackathon Poster.png" alt="Data School Hackathon" style="width: 100%; height: auto;">
+        </div>
+    </header>
+
+    <section class="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <p>The task is simple: You are provided with 500 images of potholes and a label for each pothole, 
+                telling you the amount of cement that was used to fill said pothole. Write a model that can 
+                predict the amount of cement needed to fill a pothole given a new image. Each pothole in the images
+                has a stick with marks 500mm apart on it to aid you in knowing the real life size of the pothole.
+                Included with the labels, are co-ordinates (in yolo format) of bounding boxes around potholes and the
+                sticks on the potholes. The main problem of the project is finding a way to create a rough estimate of 
+                the real life area of the pothole, using the stick annotations and images.
+            </p>
+        </div>
+    </section>
+
+    <section class="solution">
+        <div class="container">
+            <h2>Our Solution</h2>
+            <p>The following is a description of our final solution and will not include any previous solutions we explored.</p>
+            <h3 style="font-size: x-large;">The pipeline:</h3>
+            <img src="assets/images/pipeline.png" alt="Data School Hackathon" style="width: 100%; height: auto; max-width: 750px;">
+            <ol>
+                <li><strong>Semantic Segmentation of the potholes and sticks:</strong> After hours of hand-drawn annotations of the 
+                potholes we finally had annotated, segmented images. This includes labels for "stick" and "pothole". We then used a
+                torchvision FCN model and fine tuned it for our segmentation. We also applied data augmentation and a learning rate
+                scheduler.
+                </li>
+                <li><strong>Object Detection of L1 and L2:</strong> Using the provided labels of the sticks over the potholes, we 
+                fine tuned a yolov5 model by freezing the first few layers and training the model on our data.</li>
+                <li><strong>Approximation of the pothole area in pixels:</strong> After performing segmentation, there is a gap in
+                the estimated mask of the pothole because of the stick. Because of this, we add a fraction of the amount of pixels 
+                in the stick to the calculated pothole area (depending on the area of the stick relative to the pothole).
+                This gives us an estimation of the amount of pixels that belongs to the pothole.
+                </li>
+                <li><strong>Pixel to millimeter Conversion: </strong> Using the width of L1 and L2, we calculate the real-life
+                area of the pothole. The width of L1 is 500mm in real life.
+                </li>
+                <li><strong>Regression: </strong> Finally, using the real real-life area of the pothole, we fit a generalized additive
+                model to predict the amount of cement needed to fill the pothole.</li>
+            </ol>
+        </div>
+    </section>
+<!--
+    <section class="architecture">
+        <div class="container">
+            <h2>Architecture & Technologies Used</h2>
+            <p>Provide details on the architecture of your solution. Mention the technologies, frameworks, and tools you used.</p>
+            <div class="tech-stack">
+                <div class="tech">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, etc.</p>
+                </div>
+                <div class="tech">
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, etc.</p>
+                </div>
+                <div class="tech">
+                    <h3>Database</h3>
+                    <p>MySQL, MongoDB, etc.</p>
+                </div>
+                <div class="tech">
+                    <h3>APIs</h3>
+                    <p>Third-party APIs used, if any.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <section class="challenges">
+        <div class="container">
+            <h2>Bonus Question</h2>
+            <p><strong>Question:</strong> Now that you have built a model to predict how much asphalt is required to fill a pothole based on just
+                images, how might you commercialise this model? How can your model be used practically in industry?</p>
+            <p><strong>Our Answer:</strong> TODO</p>
+        </div>
+    </section>
+
+
+
+    <section class="conclusion">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <p>In the end, although our solution might not be optimal, this challenge was extremely fun and we learned more than we have in years.
+               We extend our gratitude greatly to the organizers of the hackathon, Stellenbosch University and Standard Bank.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Johan de Jongh | Johann Matthee</p>
+        </div>
+    </footer>
+</body>
+
+</html>
