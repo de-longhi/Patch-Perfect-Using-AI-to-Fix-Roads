@@ -16,27 +16,26 @@ def conway_filter(image, threshold=2):
         PIL.Image: The filtered black and white image.
     """
     # Convert the image to a NumPy array
-    img_array = np.array(image)
+    img_array = np.where(np.asarray(image) > 100, 255, 0)
+    #img_array = np.array(image)
 
     # Create a copy of the image to store the result
     result_array = img_array.copy()
-
     # Get the dimensions of the image
     rows, cols = img_array.shape
 
     # Iterate over each pixel (excluding the borders)
     for i in range(1, rows - 1):
         for j in range(1, cols - 1):
-            if img_array[i, j] != 0:  # If the pixel is white
+            if img_array[i, j] == 255:  # If the pixel is white
                 # Check the 8 neighbors
                 neighbors = img_array[i-1:i+2, j-1:j+2]
-                white_neighbors = np.sum(neighbors != 0) - 1  # Subtract the pixel itself
+                white_neighbors = np.sum(neighbors == 255) - 1  # Subtract the pixel itself
 
                 # If the number of white neighbors is less than the threshold, turn it black
                 if white_neighbors < threshold:
                     result_array[i, j] = 0
-
-    return Image.fromarray(result_array)
+    return Image.fromarray(result_array.astype(np.uint8))
 
 def process_images(input_dir, output_dir, threshold=2):
     """

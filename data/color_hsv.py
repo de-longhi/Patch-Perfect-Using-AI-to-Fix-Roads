@@ -10,10 +10,13 @@ def create_hsv_mask(image, hsv_ranges):
     # Create the mask based on the HSV range
     #mask = cv2.inRange(hsv_img, hsv_range[0], hsv_range[1])
     mask = np.zeros(hsv_img.shape[:2], dtype=np.uint8)
-    for hsv_range in hsv_ranges:
-        mask |= cv2.inRange(hsv_img, hsv_range[0], hsv_range[1])
-
+    # for hsv_range in hsv_ranges:
+    #     mask |= cv2.inRange(hsv_img, hsv_range[0], hsv_range[1])
     
+    for hsv_range in hsv_ranges:
+        temp_mask = cv2.inRange(hsv_img, hsv_range[0], hsv_range[1])
+        
+        mask = cv2.bitwise_or(mask, temp_mask)
     return Image.fromarray(mask)
 
 
@@ -44,7 +47,7 @@ hsv_ranges = [
 ]  # Example for red
 
 # Set your input and output directories
-input_directory = './train_images_segmented/'
+input_directory = './stick subset/'
 output_directory = './red masks/'
 
 # Process the images using HSV masking
