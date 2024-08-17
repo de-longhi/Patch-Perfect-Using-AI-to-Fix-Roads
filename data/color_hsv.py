@@ -47,7 +47,7 @@ hsv_ranges = [
 ]  # Example for red
 
 # Set your input and output directories
-input_directory = './stick subset'
+input_directory = './stick subset/'
 output_directory = './red masks/'
 
 # Process the images using HSV masking
