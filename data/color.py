@@ -50,7 +50,7 @@ def process_images(input_dir, output_dir, color_range):
 color_range = [(215, 255), (70, 135), (70, 120)]
 
 # Set your input and output directories
-input_directory = './train_images_segmented/'
+input_directory = './stick subset/'
 output_directory = './red masks/'
 
 # Process the images
