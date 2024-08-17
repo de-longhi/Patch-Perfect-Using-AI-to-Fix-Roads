@@ -1,6 +1,4 @@
 image,num_classes
-mask_p1036.jpg,2
-mask_p1352.jpg,2
 mask_p1170.jpg,2
 mask_p1345.jpg,2
 mask_p1109.jpg,2
@@ -17,7 +15,6 @@ mask_p1952.jpg,2
 mask_p1130.jpg,3
 mask_p1035.jpg,2
 mask_p1156.jpg,2
-mask_p1238.jpg,3
 mask_p1982.jpg,2
 mask_p1107.jpg,2
 mask_p1227.jpg,2
@@ -46,7 +43,6 @@ mask_p1075.jpg,2
 mask_p1347.jpg,2
 mask_p404.jpg,3
 mask_p1112.jpg,2
-mask_p1923.jpg,5
 mask_p1336.jpg,2
 mask_p2028.jpg,2
 mask_p1323.jpg,2
@@ -97,7 +93,6 @@ mask_p112.jpg,3
 mask_p2007.jpg,2
 mask_p138.jpg,3
 mask_p1167.jpg,2
-mask_p1993.jpg,3
 mask_p1344.jpg,2
 mask_p2012.jpg,2
 mask_p1157.jpg,2
@@ -114,8 +109,6 @@ mask_p1070.jpg,2
 mask_p125.jpg,2
 mask_p1942.jpg,2
 mask_p1275.jpg,2
-mask_p1243.jpg,1
-mask_p1980.jpg,3
 mask_p1269.jpg,3
 mask_p2016.jpg,3
 mask_p1069.jpg,3
@@ -142,7 +135,6 @@ mask_p1092.jpg,2
 mask_p1043.jpg,2
 mask_p1417.jpg,3
 mask_p1313.jpg,2
-mask_p1125.jpg,3
 mask_p1065.jpg,2
 mask_p1159.jpg,2
 mask_p1984.jpg,2
@@ -152,7 +144,6 @@ mask_p126.jpg,2
 mask_p1153.jpg,2
 mask_p1272.jpg,3
 mask_p1299.jpg,2
-mask_p500.jpg,2
 mask_p1341.jpg,2
 mask_p2009.jpg,2
 mask_p1245.jpg,2
@@ -162,7 +153,6 @@ mask_p424.jpg,3
 mask_p1286.jpg,3
 mask_p1177.jpg,2
 mask_p437.jpg,3
-mask_p1233.jpg,4
 mask_p2024.jpg,2
 mask_p1064.jpg,2
 mask_p1406.jpg,3
@@ -228,7 +218,6 @@ mask_p1056.jpg,3
 mask_p117.jpg,3
 mask_p466.jpg,3
 mask_p1970.jpg,2
-mask_p433.jpg,1
 mask_p1106.jpg,2
 mask_p1267.jpg,2
 mask_p1083.jpg,2
@@ -253,10 +242,8 @@ mask_p431.jpg,3
 mask_p1228.jpg,2
 mask_p1934.jpg,2
 mask_p1356.jpg,2
-mask_p1413.jpg,3
 mask_p1155.jpg,2
 mask_p1427.jpg,2
-mask_p1037.jpg,3
 mask_p145.jpg,2
 mask_p1999.jpg,2
 mask_p2006.jpg,2
@@ -273,9 +260,7 @@ mask_p1948.jpg,3
 mask_p443.jpg,2
 mask_p1281.jpg,2
 mask_p475.jpg,2
-mask_p1081.jpg,3
 mask_p1961.jpg,2
-mask_p1217.jpg,3
 mask_p1433.jpg,2
 mask_p1168.jpg,2
 mask_p1977.jpg,2
@@ -303,7 +288,6 @@ mask_p1246.jpg,2
 mask_p1408.jpg,2
 mask_p1184.jpg,2
 mask_p1308.jpg,2
-mask_p2026.jpg,3
 mask_p1959.jpg,2
 mask_p1090.jpg,2
 mask_p1133.jpg,2
@@ -317,7 +301,6 @@ mask_p1963.jpg,2
 mask_p1424.jpg,2
 mask_p1189.jpg,2
 mask_p426.jpg,2
-mask_p1204.jpg,3
 mask_p1939.jpg,3
 mask_p1203.jpg,2
 mask_p1946.jpg,3
@@ -358,7 +341,6 @@ mask_p1449.jpg,2
 mask_p1139.jpg,2
 mask_p438.jpg,3
 mask_p148.jpg,3
-mask_p1998.jpg,3
 mask_p1224.jpg,2
 mask_p1048.jpg,2
 mask_p118.jpg,2
@@ -373,7 +355,6 @@ mask_p1062.jpg,2
 mask_p102.jpg,3
 mask_p1951.jpg,2
 mask_p2004.jpg,2
-mask_p1343.jpg,2
 mask_p106.jpg,2
 mask_p1110.jpg,2
 mask_p1310.jpg,2
@@ -394,7 +375,6 @@ mask_p422.jpg,2
 mask_p2023.jpg,2
 mask_p113.jpg,2
 mask_p444.jpg,2
-mask_p498.jpg,1
 mask_p1285.jpg,2
 mask_p2029.jpg,2
 mask_p451.jpg,3
@@ -420,11 +400,9 @@ mask_p1445.jpg,2
 mask_p1997.jpg,2
 mask_p1082.jpg,2
 mask_p2017.jpg,3
-mask_p1305.jpg,1
 mask_p1355.jpg,3
 mask_p1257.jpg,3
 mask_p1173.jpg,2
-mask_p1981.jpg,4
 mask_p1061.jpg,2
 mask_p1199.jpg,3
 mask_p129.jpg,2
@@ -446,7 +424,6 @@ mask_p119.jpg,2
 mask_p134.jpg,2
 mask_p1182.jpg,2
 mask_p1187.jpg,2
-mask_p1995.jpg,3
 mask_p1077.jpg,2
 mask_p1078.jpg,2
 mask_p413.jpg,3
