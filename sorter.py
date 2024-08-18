@@ -25,7 +25,7 @@ def sort_csv(input_file, output_file):
         writer.writerows(sorted_rows)  # Write the sorted rows
 
 # Set your input and output file paths
-input_csv = 'image_classes.csv'
+input_csv = 'test_image_classes.csv'
 output_csv = 'sorted_output.csv'
 
 # Call the function to sort the CSV file

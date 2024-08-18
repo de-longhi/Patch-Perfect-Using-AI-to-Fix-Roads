@@ -42,13 +42,15 @@ def process_images_hsv(input_dir, output_dir, hsv_ranges):
 
 # Define the HSV range for the red color (you may need to adjust these values)
 hsv_ranges = [
-    (np.array([0, 85, 100]), np.array([5, 255, 255])),  # Bright red
+    (np.array([0, 85, 90]), np.array([5, 255, 255])),  # Bright red
     (np.array([170, 85, 100]), np.array([179, 255, 255]))  # Darker red
+    # (np.array([0, 100, 20]), np.array([8, 255, 255])),  # Bright red
+    # (np.array([160, 100, 20]), np.array([179, 255, 255]))  # Darker red
 ]  # Example for red
 
 # Set your input and output directories
-input_directory = './stick subset/'
-output_directory = './red masks/'
+input_directory = './test set resized/'
+output_directory = './test red masks/'
 
 # Process the images using HSV masking
 process_images_hsv(input_directory, output_directory, hsv_ranges)

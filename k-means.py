@@ -65,9 +65,9 @@ def main(input_csv, images_dir, output_csv):
     print("Cluster centroids have been written to", output_csv)
 
 # Define paths for your input CSV, images directory, and output CSV
-input_csv = './image_classes.csv'
-images_dir = './data/red masks filtered/'
-output_csv = 'cluster_centroids.csv'
+input_csv = './sorted_output.csv'
+images_dir = './data/filtered twice/'
+output_csv = 'test_cluster_centroids.csv'
 
 # Execute the main function
 main(input_csv, images_dir, output_csv)

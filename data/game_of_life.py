@@ -67,8 +67,11 @@ def process_images(input_dir, output_dir, threshold=2):
             print(f"Processed {filename} and saved filtered image to {output_path}")
 
 # Set your input and output directories
-input_directory = './red masks/'
-output_directory = './red masks filtered/'
+# input_directory = './test red masks/'
+# output_directory = './test red masks filtered/'
+
+input_directory = './test red masks filtered/'
+output_directory= './filtered twice/'
 
 # Process the images with the specified threshold
 process_images(input_directory, output_directory, threshold=2)
