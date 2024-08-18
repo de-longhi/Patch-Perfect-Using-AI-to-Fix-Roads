@@ -1,10 +1,10 @@
 image,num_classes
-mask_p1270.jpg,2
-mask_p434.jpg,1
-mask_p479.jpg,1
+mask_p1270.jpg,3
+mask_p434.jpg,3
+mask_p479.jpg,2
 mask_p1162.jpg,2
 mask_p1278.jpg,2
-mask_p108.jpg,2
+mask_p108.jpg,3
 mask_p1161.jpg,2
 mask_p1438.jpg,2
 mask_p1205.jpg,2
@@ -14,7 +14,7 @@ mask_p144.jpg,2
 mask_p104.jpg,3
 mask_p143.jpg,2
 mask_p1086.jpg,2
-mask_p406.jpg,4
+mask_p406.jpg,3
 mask_p1409.jpg,2
 mask_p1181.jpg,2
 mask_p1430.jpg,2

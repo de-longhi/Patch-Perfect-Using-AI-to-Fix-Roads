@@ -77,38 +77,23 @@ This section lists any major frameworks/libraries we used throughout this projec
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The following are instructions to duplicate the project on your local machine. The model should be easily trained on a ...
+The following are instructions to duplicate the project on your local machine. We haven't found time to clean up the repository, so for purposes of the competition, we recommend you look at the docs [here](https://de-longhi.github.io/Patch-Perfect-Using-AI-to-Fix-Roads/). The main segmentation model, however, was trained on an nvidia Tesla A100, but should be easily trainable on the kaggle P100.
 <!-- TODO -->
 
 ### Prerequisites
 
-This is an example of how to install pytorch, however, we recommend looking <a href="https://pytorch.org/">here</a> to find out how to install it with your own specifications.
-* pytorch
+* Environment
   ```sh
-  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  conda create --name <env> --file requirements.txt
   ```
 
 ### Installation
 
-
-1. Clone the repo
+Clone the repo
    ```sh
    git clone https://github.com/de-longhi/Patch-Perfect-Using-AI-to-Fix-Roads.git
    ```
-<!--TODO -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-<!-- TODO -->
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
@@ -116,11 +101,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Create a rough README
 - [x] Create a rough roadmap
-- [ ] Create a basic model
-- [ ] Improve on the model by consulting scientific papers
-- [ ] Create a final model by training online
-- [ ] Finalize README
-- [ ] Create online documentation
+- [x] Create a basic model
+- [x] Improve on the model by consulting scientific papers
+- [x] Create a final model by training online
+- [x] Finalize README
+- [x] Create online documentation
+- [ ] Clean up repo
 - [ ] Publicize the model
 - [ ] Deploy? :eyes:
 

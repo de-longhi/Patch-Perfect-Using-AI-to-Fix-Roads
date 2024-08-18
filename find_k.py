@@ -84,7 +84,7 @@ def save_results_to_csv(results_df, output_csv):
     print(f"Results saved to {output_csv}")
 
 # Set the input directory and output CSV file path
-input_directory = './data/test red masks/'
+input_directory = './data/filtered twice/'
 output_csv = './test_image_classes.csv'
 
 # Distance parameter for DBSCAN
