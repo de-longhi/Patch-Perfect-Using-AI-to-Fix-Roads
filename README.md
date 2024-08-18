@@ -19,7 +19,7 @@
   <p align="center">
     Repository for the Stellenbosch University Hackathon
     <br />
-    <a href="https://de-longhi.github.io/Patch-Perfect-Using-AI-to-Fix-Roads/"><strong>Explore the docs »</strong></a>
+    <a href="https://de-longhi.github.io/Patch-Perfect-Using-AI-to-Fix-Roads/"><strong>Explore our solution »</strong></a>
     <br />
     <br />
   </p>
