@@ -33,8 +33,8 @@ def resize_images(input_dir, output_dir, size=(128, 128)):
 
 if __name__ == "__main__":
     # Example usage:
-    input_directory = "./train_images_segmented/"
-    output_directory = "./stick subset/"
+    input_directory = "./validation set/"
+    output_directory = "./test set resized/"
     target_size = (448, 448)  # Resize images to 256x256
 
     resize_images(input_directory, output_directory, size=target_size)
