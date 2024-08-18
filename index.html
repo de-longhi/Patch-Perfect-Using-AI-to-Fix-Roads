@@ -40,21 +40,40 @@
             <ol>
                 <li><strong>Semantic Segmentation of the potholes and sticks:</strong> After hours of hand-drawn annotations of the 
                 potholes we finally had annotated, segmented images. This includes labels for "stick" and "pothole". We then used a
-                torchvision FCN model and fine tuned it for our segmentation. We also applied data augmentation and a learning rate
-                scheduler.
+                torchvision FCN model and fine tuned it for our segmentation. We also applied data augmentation. We then used an 
+                algorithm that draw lines at the base the sticks to estimate the area of the pothole more effectively.
+                <hr>
+
+                <img src="assets/images/pothole_1.png" style="width: 20%; aspect-ratio: 1 / 1;max-width: 750px;">
+                <img src="assets/images/pothole_2.png" style="width: 20%; aspect-ratio: 1 / 1;max-width: 750px;">
+                <img src="assets/images/pothole_3.png" style="width: 20%; aspect-ratio: 1 / 1;max-width: 750px;">
+                <img src="assets/images/pothole_4.png" style="width: 20%; aspect-ratio: 1 / 1;max-width: 750px;">
+                <hr>
                 </li>
-                <li><strong>Object Detection of L1 and L2:</strong> Using the provided labels of the sticks over the potholes, we 
-                fine tuned a yolov5 model by freezing the first few layers and training the model on our data.</li>
-                <li><strong>Approximation of the pothole area in pixels:</strong> After performing segmentation, there is a gap in
-                the estimated mask of the pothole because of the stick. Because of this, we add a fraction of the amount of pixels 
-                in the stick to the calculated pothole area (depending on the area of the stick relative to the pothole).
-                This gives us an estimation of the amount of pixels that belongs to the pothole.
+                <li><strong>Object Detection of L1 and L2:</strong> We decided not to use the provided labels for L1 and L2 as they
+                seemed sub-optimal. We, instead, opted for applying a color recognition algorithm and then, similar to Conway's game
+                life, delete all stray pixels. Then, we fit a k-means algorithm to find the centroids of the red parts of the stick.
+                <hr>
+
+                <img src="assets/images/red_1.jpg" style="width: 20%; aspect-ratio: 1 / 1;max-width: 750px;">
+                <img src="assets/images/red_2.jpg" style="width: 20%; aspect-ratio: 1 / 1;max-width: 750px;">
+                <img src="assets/images/red_3.jpg" style="width: 20%; aspect-ratio: 1 / 1;max-width: 750px;">
+                <hr>
                 </li>
-                <li><strong>Pixel to millimeter Conversion: </strong> Using the width of L1 and L2, we calculate the real-life
+                <li><strong>Approximation of the pothole area in pixels:</strong> After performing segmentation and coloring the correct
+                    pixels white, we simply counted the amount of white pixels. This is now the pixel area of the pothole.
+                </li>
+                <li><strong>Pixel to millimeter Conversion: </strong> Using the width of L1 and L2, we calculated the real-life
                 area of the pothole. The width of L1 is 500mm in real life.
                 </li>
-                <li><strong>Regression: </strong> Finally, using the real real-life area of the pothole, we fit a generalized additive
-                model to predict the amount of cement needed to fill the pothole.</li>
+                <li><strong>Regression: </strong> Finally, using the real real-life area of the pothole, we fit a linear to predict 
+                    the amount of cement needed to fill the pothole.</li>
+                <hr>
+                <img src="assets/images/graph.png" style="width: 50%; height:auto;max-width: 750px;">
+                <hr>
+                Unfortunately, we weren't able to fit anything other than a linear regression model with the time we had left. This resulted
+                in a final score of 0.14. Clearly, the data can't be represented linearly and one could even argue that more 
+                predictors are required to fit the data accurately.
             </ol>
         </div>
     </section>
@@ -88,8 +107,11 @@
         <div class="container">
             <h2>Bonus Question</h2>
             <p><strong>Question:</strong> Now that you have built a model to predict how much asphalt is required to fill a pothole based on just
-                images, how might you commercialise this model? How can your model be used practically in industry?</p>
-            <p><strong>Our Answer:</strong> TODO</p>
+                images, how might you commercialize this model? How can your model be used practically in industry?</p>
+            <p><strong>Our Answer:</strong> The model can be easily hosted on a django web-based application. The real time
+            performance of the model is rather good, so one should be able to take a clear picture of the pothole and be given a rough
+            estimate of the amount of asphalt required. 
+            </p>
         </div>
     </section>
 
@@ -98,7 +120,7 @@
     <section class="conclusion">
         <div class="container">
             <h2>Conclusion</h2>
-            <p>In the end, although our solution might not be optimal, this challenge was extremely fun and we learned more than we have in years.
+            <p>In the end, although our solution might not be fully complete, this challenge was extremely fun and we learned more than we have in years.
                We extend our gratitude greatly to the organizers of the hackathon, Stellenbosch University and Standard Bank.
             </p>
         </div>
